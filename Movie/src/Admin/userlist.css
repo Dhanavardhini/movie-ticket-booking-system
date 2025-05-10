@@ -1,0 +1,122 @@
+/* .html-root, .body-root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+} */
+.ud{
+    display: flex;
+    /* border: 2px solid; */
+    width: 80vmax;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containeruser {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+   
+    /* box-shadow: 0 1px 3px rgba(0,0,0,0.1); */
+}
+
+.table-header {
+    background-color: rgb(41, 95, 152);
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.table-cell {
+    padding: 1rem;
+    /* background-color: white; */
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    color: #140202;
+    font-size: 0.9rem;
+    background: #fcf8f8;
+}
+
+.table-row:last-child .table-cell {
+    border-bottom: none;
+    
+}
+
+.delete-btn {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    width: 50px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgb(41, 95, 152);
+    margin-top: 10px;
+}
+.edit-btn {
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    width: 50px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgb(41, 95, 152);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+  color: black; 
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .users-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem auto;
+    }
+
+    .table-header,
+    .table-cell {
+        padding: 0.75rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-header,
+    .table-cell {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .delete-btn {
+        width: 28px;
+        height: 28px;
+    }
+}

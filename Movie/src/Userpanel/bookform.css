@@ -1,0 +1,75 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+     background: url('../assets/movie2.webp')  
+  }
+
+  
+
+  .vr-container {
+    background: white; 
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    max-width: 400px; 
+    width: 100%; 
+  }
+  
+  
+
+.vr-title {
+    text-align: center;
+    color: #333;
+}
+
+.vr-form-group {
+    margin-bottom: 15px; 
+}
+
+.vr-label {
+    display: block;
+    color: black;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.vr-input, .vr-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.vr-submit-btn {
+    display: block;
+    width: 100%;
+    padding: 8px; 
+    background-color: #06308c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+.vr-submit-btn:hover {
+    background-color: #2a5077;
+}
+
+@media (max-width: 480px) {
+    .vr-container {
+        padding: 10px;
+        width: 90%; 
+    }
+
+    .vr-input, .vr-select {
+        font-size: 14px; 
+    }
+}
